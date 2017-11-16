@@ -1,8 +1,20 @@
 
 
 public final class Deck {
-    static private HashMap<String, ACard> nativeCards;
-    static private HashMap<String, ACard> userCards;
+    //User decks
+    static private HashMap<String, ACard> userDecks;
+    
+    //Native Decks
+    public static Deck FirstAgeDeck;
+    public static Deck SecondAgeDeck;
+    public static Deck ThirdAgeDeck;
+   
+    static private Deck createFirstNativeDeck(){}
+    static private Deck createSecondNativeDeck(){}
+    static private Deck createThirdNativeDeck(){}
+    
+    
+    
     
     private String name;
     private ArrayList<ACard> cards;
@@ -25,17 +37,6 @@ public final class Deck {
             cards[rand] = first;
         }       
     }
-    
-    
-    //Native Decks
-    public static Deck FirstAgeDeck;
-    public static Deck SecondAgeDeck;
-    public static Deck ThirdAgeDeck;
-    
-    
-    static private Deck createFirstNativeDeck(){}
-    static private Deck createSecondNativeDeck(){}
-    static private Deck createThirdNativeDeck(){}
     
     
     //User/Player Deck

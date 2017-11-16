@@ -17,12 +17,12 @@ public abstract class ContentModel implements gObject{
         this.amouth.setOrigin(this.amouth.getGlobalBounds().width/2, this.amouth.getGlobalBounds().height/2);
     }
     
-    public void setPosition(Vector2f position){
+    public final void setPosition(Vector2f position){
         this.laureate.setPosition(position);
         this.amouth.setPosition(position);
     }
     
-    public void draw(RenderTarget target){
+    public final void draw(RenderTarget target){
         target.draw(laureate);
         target.draw(amouth);
     }

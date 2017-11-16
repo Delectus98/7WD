@@ -1,11 +1,17 @@
 
 public class Cards {
+    //user cards
+    private static HashMap<String, ACard> userCards;
     
-    private HashMap<String, ACard> userCards;
+    private static void add(ACard card){}
+    
+    //native cards
     private HashMap<String, ACard> nativeCards;
-
-    
+ 
     public static void load(){}
+    
+    
+    
     
     //instanceof
     public static boolean isBrownCard(ACard card){

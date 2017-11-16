@@ -1,8 +1,7 @@
 
 public class AgePattern extends gObject{
     private String name;
-    private final Deck deck;
-    private ArrayList<CardLocation> ;
+    private ArrayList<CardLocation> locations;
     
     private static class CardLocation {
         private final ACard card;
@@ -26,6 +25,21 @@ public class AgePattern extends gObject{
         }
         
     }
+    
+    public boolean useDeck(Deck deck){
+        if (deck.size() >= locations.size()){
+            deck.shuffle();
+        
+            //for each
+            
+            return true;
+        } else {
+            return false;   
+        }
+        
+        
+    }
+    
     
     // User/Player Pattern
     public AgePattern(){}

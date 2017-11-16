@@ -40,6 +40,8 @@ public class AgePattern extends gObject{
         
     }
     
+    public void draw(RenderTarget target){}
+    
     
     // User/Player Pattern
     public AgePattern(){}

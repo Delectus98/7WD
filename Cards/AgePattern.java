@@ -2,7 +2,7 @@
 public class AgePattern extends gObject{
     private String name;
     private final Deck deck;
-    private ArrayList<CardLocation> firstLine;
+    private ArrayList<CardLocation> ;
     
     private static class CardLocation {
         private final ACard card;
@@ -27,14 +27,17 @@ public class AgePattern extends gObject{
         
     }
     
+    // User/Player Pattern
     public AgePattern(){}
     
-    public void loadFromFile(String path){}
+    public boolean loadFromFile(String path){}
     
-    public void loadFromMemory(String data){
-        
+    public boolean create(String name){
+        //'name' has to be unique >> check names in the folder "Decks/..."
     }
     
-    public AgePattern(){}
-
+    public boolean delete(String name){
+        //
+    }
+        
 }

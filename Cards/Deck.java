@@ -3,10 +3,17 @@
 public class Deck {
     private String name;
     private ArrayList<ACard> cards;
-    
+        
     public Deck(String name){
         this.name = name;
     }
+    
+    public Deck(){}
+    
+    public boolean loadFromFile(String path){
+        //create deck/cards from a file
+    }
+
     
     public void shuffle(){ 
         //Mélange de Fisher-Yates
@@ -19,6 +26,5 @@ public class Deck {
             cards[rand] = first;
         }       
     }
-    
     
 }

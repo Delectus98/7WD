@@ -29,4 +29,15 @@ public class Textures{
       
     }
     
+    static public Texture getUtils(String name){
+        return utils.get(name);   
+    }
+    
+    static public Texture getGUI(String name){
+        return gui.get(name);   
+    }
+    
+    static public Texture getCardsImage(String name){
+        return cardsImage.get(name);   
+    }
 }

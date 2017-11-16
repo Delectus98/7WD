@@ -7,7 +7,7 @@ public class Textures{
     static private HashMap<String, Texture> nativeCardsImages;
     static private HashMap<String, Texture> userCardsImages;
 
-
+    static private Texture laureateTexture = new Texture();
     static private Texture simpleCardTexture = new Texture();    
     static private Texture brownTopTexture = new Texture();
     static private Texture greyTexture = new Texture();

@@ -1,0 +1,6 @@
+UserTextures      <---     UserACards         <---  UserDecks          <---     UserAgePatterns      <---     (GameRule)
+NativeTextures    <---     NativeACards       <---  NativeDecks        <---     NativeAgePatterns    <---     Ages
+                                                   UserWonderCards    <---                                    WonderList
+                                                   NativeWonderCards  <---
+                                                   UserPCoins         <---                                    PCoinsList
+                                                   NativePCoins       <---

@@ -1,7 +1,12 @@
 import java.util.*;
 
 
-public class ACard extends gObject
+public abstract class ACard extends gObject
 {
     private String name;
+    
+    public String getName(){
+        return name;
+    }
+    
 }

@@ -35,6 +35,7 @@ public class Deck {
     
     public boolean loadFromFile(String path){
         //load user deck
+        // deck name est unique
         //  > load existing cards (can't be removed) : "native:name"
         //  > load user cards "user:{all datas...}"
         

@@ -33,4 +33,9 @@ public class Deck {
         }       
     }
     
+    
+    public static final Deck FirstAgeDeck;
+    public static final Deck SecondAgeDeck;
+    public static final Deck ThirdAgeDeck;
+    
 }

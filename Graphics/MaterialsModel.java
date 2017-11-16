@@ -1,17 +1,59 @@
 
 
-public abstract class MaterialsModel implements gObject{
-    private Sprite sprite = new Sprite();
-    private Text amouth = new Title();
-    private int count;
-    
-    public MaterialsModel(int count){
-        this.count = count;
-        
-        if (this.count < 0)
-          this.count = - this.count;
-          
-        
+public abstract class MaterialModel extends ContentModel{
+       
+    protected MaterialModel(int count){
+        super(count);  
     }
     
+    
+    public static StoneModel(int count) extends MaterialContent{
+        super (count);
+        
+        super.content.setTexture(Textures.get("Resources/Textures/stone.png"), true);
+        
+        super.content.setOrigin(this.content.getGlobalBoudns().width/2, this.content.getGlobalBoudns().height/2);
+    }
+    
+    public static ClayModel(int count){
+        super (count);
+        
+        super.content.setTexture(Textures.get("Resources/Textures/clay.png"), true);
+        
+        super.content.setOrigin(this.content.getGlobalBoudns().width/2, this.content.getGlobalBoudns().height/2);
+    }
+    
+    public static WoodModel(int count){
+        super (count);
+        
+        super.content.setTexture(Textures.get("Resources/Textures/wood.png"), true);
+        
+        super.content.setOrigin(this.content.getGlobalBoudns().width/2, this.content.getGlobalBoudns().height/2);
+    }
+    
+    public static GlassModel(int count){
+        super (count);
+        
+        super.content.setTexture(Textures.get("Resources/Textures/glass.png"), true);
+        
+        super.content.setOrigin(this.content.getGlobalBoudns().width/2, this.content.getGlobalBoudns().height/2);
+    }
+    
+    public static PaperModel(int count){
+        super (count);
+        
+        super.content.setTexture(Textures.get("Resources/Textures/paper.png"), true);
+        
+        super.content.setOrigin(this.content.getGlobalBoudns().width/2, this.content.getGlobalBoudns().height/2);
+    }
+    
+    public static GoldModel(int count){
+        super (count);
+        
+        super.content.setTexture(Textures.get("Resources/Textures/gold.png"), true);
+        
+        super.content.setOrigin(this.content.getGlobalBoudns().width/2, this.content.getGlobalBoudns().height/2);
+    }
+    
+
 }

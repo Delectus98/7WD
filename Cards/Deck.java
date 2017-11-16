@@ -34,8 +34,14 @@ public class Deck {
     }
     
     
-    public static final Deck FirstAgeDeck;
-    public static final Deck SecondAgeDeck;
-    public static final Deck ThirdAgeDeck;
+    public static final Deck FirstAgeDeck = createFirstNativeDeck();
+    public static final Deck SecondAgeDeck = createSecondNativeDeck();
+    public static final Deck ThirdAgeDeck = createThirdNativeDeck();
+    
+    
+    static private Deck createFirstNativeDeck(){}
+    static private Deck createSecondNativeDeck(){}
+    static private Deck createThirdNativeDeck(){}
+
     
 }

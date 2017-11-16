@@ -1,6 +1,12 @@
 
 public class Cards {
     
+    private HashMap<String, ACard> userCards;
+    private HashMap<String, ACard> nativeCards;
+
+    
+    public static void load(){}
+    
     //instanceof
     public static boolean isBrownCard(ACard card){
         return (card instanceof BrownCard);

@@ -4,7 +4,9 @@ public class Textures{
     static private HashMap<String, Texture> gui;
     
     //cards
-    static private HashMap<String, Texture> cardsImage;
+    static private HashMap<String, Texture> nativeCardsImages;
+    static private HashMap<String, Texture> userCardsImages;
+
 
     static private Texture simpleCardTexture = new Texture();    
     static private Texture brownTopTexture = new Texture();
@@ -37,7 +39,13 @@ public class Textures{
         return gui.get(name);   
     }
     
-    static public Texture getCardsImage(String name){
-        return cardsImage.get(name);   
+    //@TODO native
+    static public Texture getNativeCardsImage(String name){
+        return nativeCardsImages.get(name);   
+    }
+    
+    //@TODO user
+    static public Texture getUserCardsImage(String name){
+        return userCardsImages.get(name);   
     }
 }

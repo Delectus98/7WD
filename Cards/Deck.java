@@ -26,6 +26,10 @@ public final class Deck {
         SecondAgeDeck = createSecondNativeDeck();
         ThirdAgeDeck = createThirdNativeDeck();
     }
+    
+    public String getName(){
+        return name;
+    }
   
     public void shuffle(){ 
         //Mélange de Fisher-Yates

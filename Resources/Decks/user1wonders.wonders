@@ -1,0 +1,13 @@
+
+<wonders>
+
+  <wonder>
+      name="Deus Ex Temple"
+      image="Resources/Textures/User/DeusExTemple.jpg"
+      price={stone:5 clay:5 wood:2 gold:10}
+      reward={stone}
+      script=[buildCard(selectAmongTrash())]
+      script=[gainMoney(10)]
+      script=[destroyCard(selectAmongHidenCard())]
+  </wonder>
+</wonders>

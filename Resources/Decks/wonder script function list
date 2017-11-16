@@ -1,0 +1,41 @@
+//objects:player/opponent/
+//lorsque que le joueur "player" active un script l'opposant peut pouvoir agir
+
+void gainMoney(int):player
+void lostMoney(int):opponent
+
+void replay():opponent
+
+//not wonder cards
+ACard getCardAmongTrash(CardType restriction):player //String[] = coins names
+ACard getCardAmongVisible(CardType restriction):opponent
+ACard getCardAmongHiden(CardType restriction):opponent
+ACard getCardAmongNotUsed(CardType restriction):player
+ACard getCardAmongPlayer(CardType restriction):opponent
+ACard getCardAmongOpponent(CardType restriction):player
+ACard getCardAmongPattern(... restrictionArea, CardType restriction):opponent
+//l'option get l'enlève de son propriétaire ou zone initial(e)
+
+//wonder cards
+WonderCard stealWonderNotYetBuilt(String[] restriction) //String[] = wonders names
+WonderCard destroyWonderPlayer(String[] restriction)
+WonderCard destroyWonderOpponent(String[] restriction)
+WonderCard buildWonderPlayer(String[] restriction)
+WonderCard buildWonderOpponent(String[] restriction)
+
+//all cards
+void build(ACard card)
+void destroy(ACard card) 
+void sell(ACard card)
+
+//Coins
+PCoin selectCoinAmongHiden(String[] restriction) //String[] = coins names
+PCoin selectCoinAmongVisible(String[] restriction)
+PCoin stoleCoinAmongOpponent(String[] restriction)
+PCoin stoleCoinAmongPlayer(String[] restriction)
+PCoin destroyCoinAmongPlayer(String[] restriction)
+PCoin destoryCoinAmongOpponent(String[] restriction)
+
+void destroyCard(ACard):player
+void buildCard(ACard):player
+

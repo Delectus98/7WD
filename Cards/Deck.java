@@ -1,11 +1,17 @@
 
 
-public class Deck {
-    private static HashMap<String, Texture> dynamicUserTextures = new HashMap<>();
+public final class Deck {
+    static private HashMap<String, ACard> nativeCards;
+    static private HashMap<String, ACard> userCards;
     
     private String name;
     private ArrayList<ACard> cards;
         
+    static void load(){
+        FirstAgeDeck = createFirstNativeDeck();
+        SecondAgeDeck = createSecondNativeDeck();
+        ThirdAgeDeck = createThirdNativeDeck();
+    }
   
     public void shuffle(){ 
         //Mélange de Fisher-Yates
@@ -22,9 +28,9 @@ public class Deck {
     
     
     //Native Decks
-    public static final Deck FirstAgeDeck = createFirstNativeDeck();
-    public static final Deck SecondAgeDeck = createSecondNativeDeck();
-    public static final Deck ThirdAgeDeck = createThirdNativeDeck();
+    public static Deck FirstAgeDeck;
+    public static Deck SecondAgeDeck;
+    public static Deck ThirdAgeDeck;
     
     
     static private Deck createFirstNativeDeck(){}
@@ -49,10 +55,6 @@ public class Deck {
             //on doit trouver la bonne extension du fichier 
             
             this.name = Files.getFileName(fullpath);
-            
-            //ArrayList<String> filecontent...
-            //if (isImage(attribut)) >> dynamicUserTextures.find(attribut) >> dynamicUserTextures.add(....)
-            //if (isScript(chunck))
 
             
         } else {

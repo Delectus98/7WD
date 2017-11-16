@@ -2,7 +2,7 @@
 //lorsque que le joueur "player" active un script l'opposant peut pouvoir agir
 
 void gainMoney(int):player
-void lostMoney(int):opponent
+void looseMoney(int):opponent
 
 void replay():opponent
 
@@ -14,28 +14,32 @@ ACard getCardAmongNotUsed(CardType restriction):player
 ACard getCardAmongPlayer(CardType restriction):opponent
 ACard getCardAmongOpponent(CardType restriction):player
 ACard getCardAmongPattern(... restrictionArea, CardType restriction):opponent
-//l'option get l'enlève de son propriétaire ou zone initial(e)
+ACard getCardAmong(...)
 
 //wonder cards
-WonderCard stealWonderNotYetBuilt(String[] restriction) //String[] = wonders names
-WonderCard destroyWonderPlayer(String[] restriction)
-WonderCard destroyWonderOpponent(String[] restriction)
-WonderCard buildWonderPlayer(String[] restriction)
-WonderCard buildWonderOpponent(String[] restriction)
+WonderCard getWonderNotYetBuiltPlayer(String[] restriction) //String[] = wonders names
+WonderCard getWonderNotYetBuiltOpponent(String[] restriction) //String[] = wonders names
 
 //all cards
-void build(ACard card)
-void destroy(ACard card) 
-void sell(ACard card)
+void buildCard(ACard card)
+void destroyCard(ACard card) //si c'est une merveille cela la déconstruit sinon dans la défausse
+void sellCard(ACard card) // gagne de l'argent et dans la défausse
+//l'option build/destroy/sell l'enlève le droit de propriété de son propriétaire ou zone initial(e)
 
 //Coins
-PCoin selectCoinAmongHiden(String[] restriction) //String[] = coins names
-PCoin selectCoinAmongVisible(String[] restriction)
-PCoin stoleCoinAmongOpponent(String[] restriction)
-PCoin stoleCoinAmongPlayer(String[] restriction)
-PCoin destroyCoinAmongPlayer(String[] restriction)
-PCoin destoryCoinAmongOpponent(String[] restriction)
+PCoin getCoinAmongHiden(String[] restriction) //String[] = coins names
+PCoin getCoinAmongVisible(String[] restriction)
+PCoin getCoinAmongOpponent(String[] restriction)
+PCoin getCoinAmongPlayer(String[] restriction)
 
-void destroyCard(ACard):player
-void buildCard(ACard):player
+void destroyCoin(ACard):player //va dans la pile de coin de la partie
+void buildCoin(ACard):player
+
+//Taxes
+Taxe getTaxes(int index)
+
+void removeTaxes(Taxe)
+void taxPlayer(Taxe)
+void taxOpponent(Taxe)
+
 

@@ -1,6 +1,8 @@
 
 
 public class Deck {
+    private static HashMap<String, Texture> dynamicUserTextures = new HashMap<>();
+    
     private String name;
     private ArrayList<ACard> cards;
         
@@ -47,6 +49,10 @@ public class Deck {
             //on doit trouver la bonne extension du fichier 
             
             this.name = Files.getFileName(fullpath);
+            
+            //ArrayList<String> filecontent...
+            //if (isImage(attribut)) >> dynamicUserTextures.find(attribut) >> dynamicUserTextures.add(....)
+            //if (isScript(chunck))
 
             
         } else {

@@ -38,7 +38,7 @@ public class Cards {
     public static GreyCard toGreyCard(ACard card){
         return (GreyCard)(card);
     }
-
+   
     public static YellowCard toYellowCard(ACard card){
         return (YellowCard)(card);
     }
@@ -60,3 +60,5 @@ public class Cards {
     }
     
 }
+
+

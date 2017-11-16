@@ -1,5 +1,18 @@
 
 
 public class BlueCard extends ACard{
-    public int civilPoints = 0;
+    private int civilPoints = 0;
+    private PointsModel model;
+    
+    public BlueCard(int civilPoints){
+        this.civilPoints = civilPoints;
+        
+        this.model = new PointsModel(this.civilPoints);
+    }
+    
+    
+    public void draw(RenderTarget target){
+        model.draw(target);
+    }
+    
 }

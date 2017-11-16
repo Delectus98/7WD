@@ -33,7 +33,7 @@ public class Deck {
     //User/Player Deck
     public Deck(){}
     
-    public boolean loadFromFile(String path){
+    public boolean loadFromFile(String fullpath){
         //load user deck
         // deck name est unique
         //  > load existing cards (can't be removed) : "native:name"
@@ -43,7 +43,16 @@ public class Deck {
         //"user:{all datas...}" la carte n'existe pas et du coup on a les informations pour la créer
         //ATTENTION : chaque carte on un nom unique
         
-        this.name = FileName(path);
+        if (Files.getFileExtension(fullpath).equals("deck")){
+            //on doit trouver la bonne extension du fichier 
+            
+            this.name = Files.getFileName(fullpath);
+
+            
+        } else {
+            return false;   
+        }
+        
     }
     
 }

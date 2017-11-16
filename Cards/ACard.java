@@ -19,5 +19,6 @@ public abstract class ACard extends gObject
     public String getName(){
         return name;
     }
-    
 }
+
+

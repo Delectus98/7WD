@@ -11,7 +11,7 @@ public abstract class ACard extends gObject
         
         this.title.setString(name);
         
-        this.title.setFont();
+        this.title.setFont(Fonts.get("Resources/Fonts/regular.ttf"));
         
         this.title.setOrigin(this.title.getGlobalBounds().width/2, this.title.getGlobalBounds().height/2);
     }

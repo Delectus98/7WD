@@ -4,6 +4,8 @@ public final class Deck {
     //User decks
     static private HashMap<String, ACard> userDecks;
     
+    static public addDeck(Deck deck){}
+    
     //Native Decks
     public static Deck FirstAgeDeck;
     public static Deck SecondAgeDeck;

@@ -1,7 +1,7 @@
 
 <wonders>
 
-  <wonder>
+  <wonder
       name="Deus Ex Temple"
       image="Resources/Textures/User/DeusExTemple.jpg"
       price={stone:5 clay:5 wood:2 gold:10}
@@ -9,5 +9,19 @@
       script=[buildCard(selectAmongTrash())]
       script=[gainMoney(10)]
       script=[destroyCard(selectAmongHidenCard())]
-  </wonder>
+  ></wonder>
+  
+  <wonder
+      name="Deus Ex Temple"
+      image="Resources/Textures/User/DeusExTemple.jpg"
+      price={stone:5 clay:5 wood:2 gold:10}
+      reward={stone}
+      script=[buildCard(selectAmongTrash())]
+      script=[gainMoney(10)]
+      script=[destroyCard(selectAmongHidenCard())]
+  ></wonder>
+  
 </wonders>
+
+
+//issue : si l'utilisateur créé une carte avec le même nom dans des deck différents (on doit avoir une map qui trie les cartes selon le créateur, le deck, le nom de la carte)

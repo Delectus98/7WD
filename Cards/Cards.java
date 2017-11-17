@@ -12,7 +12,9 @@ public class Cards {
     //native cards
     private HashMap<String, ACard> nativeCards;
  
-    public static boolean preload(){}
+    public static boolean preload(){
+        return true;
+    }
     
     
     

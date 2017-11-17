@@ -6,7 +6,7 @@ public abstract class MaterialModel extends ContentModel{
         super(count);  
     }
     
-    
+   //set scale for each if the bounds are too big 
     public static StoneModel(int count) extends MaterialContent{
         super (count);
         

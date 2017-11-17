@@ -1,16 +1,16 @@
 
 
 public class Musics {
-  
-    private HashMap<String, Music> musicList; //music 
-    private Music current;
+	  
+    private static HashMap<String, Music> musicList; //music 
+    private static Music current;
 
-    public static void preload(){
+    public static boolean preload(){
                   
          try {
             Path path = Paths.get("Assets/Musics.txt"); 
             File file = Files.open(path);
-            
+            return true;
             //for each lines >> Music temp = new Music(); 
             //if (temp.openFromFile(file.getLine(index))) 
                 //musicList.add(file.getLine(index), temp);
@@ -53,7 +53,7 @@ public class Musics {
     }
     
     public void fadeIn(){
-        //quand la musique commence (pas obligé)
+        //quand la musique commence (pas obligÃ©)
     }
     
     public void fadeOut(){
@@ -64,7 +64,7 @@ public class Musics {
         return musicList.size();
     }
     
-    public String get(int index){
+    public Music get(int index){
         return musicList.get(index);
     }
 

@@ -9,7 +9,7 @@ public class Game {
     static private Player playerB;
     
     //preload
-    static private boolean load(){
+    static private boolean preload(){
          if (!Textures.load()) return false;
          if (!Sounds.load()) return false;
          if (!Fonts.load()) return false;

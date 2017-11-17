@@ -12,6 +12,8 @@
   //will create new cards
   //issue : si l'on veut créer différents deque utilisant les mêmes cartes utilisateurs >> verifier qu'elles sont 100% identiques
   //issue : si on veut avoir des cartes en double
+  //issue : si l'utilisateur créé une carte avec le même nom dans des deck différents ...
+  //... (on doit avoir une map qui trie les cartes selon le créateur, le deck, le nom de la carte)
   
   <card native="Brasserie"></cards>
   <card native="Cave à vin"></cards>

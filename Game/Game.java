@@ -11,9 +11,9 @@ public class Game {
     //preload
     static private boolean load(){
          if (!Textures.preload()) return false;
-         if (!Sounds.load()) return false;
-         if (!Fonts.load()) return false;
-         if (!Musics.load()) return false;
+         if (!Sounds.preload()) return false;
+         if (!Fonts.preload()) return false;
+         if (!Musics.preload()) return false;
         
          if (!Cards.load()) return false; //native cards and native wonders
          if (!Deck.load()) return false;//user cards and user wonders >> gÃ©nÃ¨re dynamiquement les cartes utilisateurs

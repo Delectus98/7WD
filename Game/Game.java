@@ -60,14 +60,16 @@ public class Game {
             while (window.isOpen())
             {
                 Game.events();
+                
+                switch (){
+                    case MAIN_MENU:/*select menu*/break;
+                    case STEP_GAMERULES:/*select game rules > native : user*/break;
+                    case STEP_AGEPATTERNS:/*select agepatterns > native : user*/break;
+                    case STEP_DECKS:/*select decks > native : user*/break;
+                }
             }
             
-            switch (){
-                case MAIN_MENU:/*select menu*/break;
-                case STEP_GAMERULES:/*select game rules > native : user*/break;
-                case STEP_AGEPATTERNS:/*select agepatterns > native : user*/break;
-                case STEP_DECKS:/*select decks > native : user*/break;
-            }
+            
             
         }
         else{

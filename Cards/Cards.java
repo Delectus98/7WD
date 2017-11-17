@@ -2,13 +2,17 @@
 public class Cards {
     //user cards
     private static HashMap<String, ACard> userCards;
+    //si une carte existe déja alors on en rajoute pas une et on renvoie false
+    //les cartes utilisateurs sont limités (pas plus de XXX >> à définir) et elles sont générés que si elles sont demandés
     
-    private static void add(ACard card){}
+    private static boolean loadFromFile(String fullpath){}
+    
+    private static boolean add(ACard card){}
     
     //native cards
     private HashMap<String, ACard> nativeCards;
  
-    public static void load(){}
+    public static boolean load(){}
     
     
     

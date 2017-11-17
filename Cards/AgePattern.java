@@ -1,37 +1,33 @@
 
-public class AgePattern extends gObject{
+public class AgePattern implements gObject{
 
     private static class CardLocation {
         private final ACard card;
         private CardLocation left;
         private CardLocation right;
         
-        public CardLocation(){}
-        
-        public void setCard(ACard card){
-            this.card = card;
+        public CardLocation(ACard card){
+        	 this.card = card;
         }
         
-        public void createLeft(){
+        public void createLeft(ACard card){
             if (left == null)
-              left = new CardLocation();
+              left = new CardLocation(card);
         }
         
-        public void createRight(){
+        public void createRight(ACard card){
             if (right == null)
-              right = new CardLocation();
+              right = new CardLocation(card);
         }
-        
     }
-    
     //user patterns
     public AgePattern(){}
     
-    public boolean loadFromFile(String path){}
-    //natives patterns
-    static public AgePattern FirstAgePattern:
-    static public AgePattern SecondAgePattern:
-    static public AgePattern ThirdAgePattern:
+    public boolean loadFromFile(String path){return true;}
+    //native patterns
+    static public AgePattern FirstAgePattern;
+    static public AgePattern SecondAgePattern;
+    static public AgePattern ThirdAgePattern;
 
     static public void preload(){
         //FirstAgePattern = ...
@@ -56,14 +52,14 @@ public class AgePattern extends gObject{
         
         
     }
-    
     public String getName(){
         return name;
     }
-    
-    public void draw(RenderTarget target){}
-    
-    
+	@Override
+	public void draw(RenderTarget target) {
+		
+		
+	}
     // User/Player Pattern
     
         

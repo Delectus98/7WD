@@ -2,14 +2,20 @@
 //<name=user1pattern>
 
 <cards>
-  <card type="blue" name="Liberty Tower" price={stone:1 glass:3} points=2></card>
+
+  <card type="blue" name="Liberty Tower" price={stone:1 glass:3} points=2 image=".../.png"></card>
   <card type="green" name="Einstein's House" price={clay:1 paper:1 gold:2} points=2></card>
   <card type="brown" name="Stone Mines" price={stone:1 wood:1} reward={stone:2}></card>
   <card type="red" name="Mars Pillars" price={stone:1 wood:1 clay:2 gold:1} military=3></card>
   <card type="yellow" name="Cresus Shop" price={wood:1 clay:1 gold:4} choiceReward={stone clay}></card>
   <card type="yellow" name="Cresus Shop 2" price={wood:1 clay:1 gold:4} reward={stone:1} points=3></card>
-
-	<card native="Brasserie">
+  //will create new cards
+  //issue : si l'on veut créer différents deque utilisant les mêmes cartes utilisateurs >> verifier qu'elles sont 100% identiques
+  //issue : si on veut avoir des cartes en double
+  
+  <card native="Brasserie"></cards>
+  <card native="Cave à vin"></cards>
+  //will use already existing cards
 	
 
 </cards>

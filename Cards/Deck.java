@@ -3,8 +3,10 @@
 public final class Deck {
     //User decks
     static private HashMap<String, ACard> userDecks;
+    //si un deck existe déja alors on en rajoute pas une et on renvoie false
+    //les deck utilisateurs sont limités (pas plus de XXX >> à définir) et ils sont générés que si ils sont demandés
     
-    static public addDeck(Deck deck){}
+    static public boolean addDeck(Deck deck){}
     
     //Native Decks
     public static Deck FirstAgeDeck;
@@ -63,7 +65,7 @@ public final class Deck {
             
             this.name = Files.getFileName(fullpath);
 
-            
+            return true;
         } else {
             return false;   
         }

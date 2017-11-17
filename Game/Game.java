@@ -1,23 +1,23 @@
 
-
 public class Game { 
     //classe static uniquement pour jouer et comment on va joueur != Gameruler classe static pour changer et ajouter du contenu
     static private Gamerules rules;
-    static private RenderWindow window = new RenderWindow("7WD", Videomode.getDesktopMode());
+    static private RenderWindow window = new RenderWindow( VideoMode.getDesktopMode(), "7 Wonders Duel");
+    
     
     static private Player playerA;
     static private Player playerB;
     
     //preload
-    static private boolean preload(){
-         if (!Textures.load()) return false;
+    static private boolean load(){
+         if (!Textures.preload()) return false;
          if (!Sounds.load()) return false;
          if (!Fonts.load()) return false;
          if (!Musics.load()) return false;
         
-         if (!Cards.load()) return false; //native cards and native wonders >> génère dynamiquement les textures utilisateurs
-         if (!Deck.load()) return false;//native deck >> génère dynamiquement les cartes utilisateurs
-         if (!AgePattern.load()) return false; //native agepattern >> génère dynamiquement les patternes utilisateurs
+         if (!Cards.load()) return false; //native cards and native wonders
+         if (!Deck.load()) return false;//user cards and user wonders >> gÃ©nÃ¨re dynamiquement les cartes utilisateurs
+         if (!AgePattern.load()) return false; //gÃ©nÃ¨re dynamiquement les patternes utilisateurs
         
          if (!Gamerules.load()) return false; //native rules
         
@@ -26,7 +26,7 @@ public class Game {
     
     //Gamerules
     static private boolean setNativeRules(){
-        rules = Gamerules.nativeRules;
+    	rules = Gamerules.nativeRules;
         return true;
     }
     static private boolean setUserRules(String fullpath){
@@ -60,16 +60,14 @@ public class Game {
             while (window.isOpen())
             {
                 Game.events();
-                
-                switch (){
-                    case MAIN_MENU:/*select menu*/break;
-                    case STEP_GAMERULES:/*select game rules > native : user*/break;
-                    case STEP_AGEPATTERNS:/*select agepatterns > native : user*/break;
-                    case STEP_DECKS:/*select decks > native : user*/break;
-                }
             }
             
-            
+            switch (){
+                case MAIN_MENU:/*select menu*/break;
+                case STEP_GAMERULES:/*select game rules > native : user*/break;
+                case STEP_AGEPATTERNS:/*select agepatterns > native : user*/break;
+                case STEP_DECKS:/*select decks > native : user*/break;
+            }
             
         }
         else{

@@ -40,10 +40,11 @@ public final class Deck {
     static private Deck createSecondNativeDeck(){}
     static private Deck createThirdNativeDeck(){}
     
-    static void preload(){
+    public static boolean preload(){
         FirstAgeDeck = createFirstNativeDeck();
         SecondAgeDeck = createSecondNativeDeck();
         ThirdAgeDeck = createThirdNativeDeck();
+        return true;
     }
     
     

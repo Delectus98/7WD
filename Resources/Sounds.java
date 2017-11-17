@@ -3,7 +3,7 @@
 public class Sounds {
     private HashMap<String, SoundBuffer> buffers;
     
-    public boolean preload(){
+    public static boolean preload(){
         return true;
     }
     

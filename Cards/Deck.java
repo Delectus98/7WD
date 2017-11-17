@@ -40,18 +40,18 @@ public final class Deck {
     static private Deck createSecondNativeDeck(){}
     static private Deck createThirdNativeDeck(){}
     
-    
-    
-    
-    private String name;
-    private ArrayList<ACard> cards;
-        
-    static void load(){
+    static void preload(){
         FirstAgeDeck = createFirstNativeDeck();
         SecondAgeDeck = createSecondNativeDeck();
         ThirdAgeDeck = createThirdNativeDeck();
     }
     
+    
+    
+    
+    private String name;
+    private ArrayList<ACard> cards;
+
     public String getName(){
         return name;
     }

@@ -71,8 +71,8 @@ public class Game {
             
         }
         else{
-            JOptionPane pane = new JOptionPane("Les ressources de base du jeu sont manquantes", "ok");
-            pane.open();
+            JOptionPane.showMessageDialog(null, "Native Assets exception throw : Can't load all resources. \n" +
+                                          "Please make sure that you do not remove any of native resources.");
         }
     }
     

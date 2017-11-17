@@ -29,10 +29,11 @@ public class AgePattern implements gObject{
     static public AgePattern SecondAgePattern;
     static public AgePattern ThirdAgePattern;
 
-    static public void preload(){
+    static public boolean preload(){
         //FirstAgePattern = ...
         //SecondAgePattern = ...
         //ThirdAgePattern = ...
+	    return true;
     }
     
     

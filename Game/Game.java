@@ -15,9 +15,9 @@ public class Game {
          if (!Fonts.preload()) return false;
          if (!Musics.preload()) return false;
         
-         if (!Cards.load()) return false; //native cards and native wonders
-         if (!Deck.load()) return false;//user cards and user wonders >> gÃ©nÃ¨re dynamiquement les cartes utilisateurs
-         if (!AgePattern.load()) return false; //gÃ©nÃ¨re dynamiquement les patternes utilisateurs
+         if (!Cards.preload()) return false; //native cards and native wonders
+         if (!Deck.preload()) return false;//user cards and user wonders >> gÃ©nÃ¨re dynamiquement les cartes utilisateurs
+         if (!AgePattern.preload()) return false; //gÃ©nÃ¨re dynamiquement les patternes utilisateurs
         
          if (!Gamerules.load()) return false; //native rules
         

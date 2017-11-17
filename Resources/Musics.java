@@ -5,7 +5,7 @@ public class Musics {
     private HashMap<String, Music> musicList; //music 
     private Music current;
 
-    public static void load(){
+    public static void preload(){
                   
          try {
             Path path = Paths.get("Assets/Musics.txt"); 

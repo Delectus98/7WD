@@ -27,8 +27,8 @@ public class Textures{
     //structures
 
     
-    static public void preload(){
-      
+    static public boolean preload(){
+      return true;
     }
     
     static public Texture getUtils(String name){

@@ -2,7 +2,7 @@
 public final class Gamerules {
     public static Gamerules nativeRules;
     
-    public static boolean load(){
+    public static boolean preload(){
         nativeRules = new Gamerules();
     }
     

@@ -1,8 +1,6 @@
 
 public class AgePattern extends gObject{
-    private String name;
-    private ArrayList<CardLocation> locations;
-    
+
     private static class CardLocation {
         private final ACard card;
         private CardLocation left;
@@ -26,6 +24,25 @@ public class AgePattern extends gObject{
         
     }
     
+    //user patterns
+    public AgePattern(){}
+    
+    public boolean loadFromFile(String path){}
+    //natives patterns
+    static public AgePattern FirstAgePattern:
+    static public AgePattern SecondAgePattern:
+    static public AgePattern ThirdAgePattern:
+
+    static public void preload(){
+        //FirstAgePattern = ...
+        //SecondAgePattern = ...
+        //ThirdAgePattern = ...
+    }
+    
+    
+    private String name;
+    private ArrayList<CardLocation> locations;
+    
     public boolean useDeck(Deck deck){
         if (deck.size() >= locations.size()){
             deck.shuffle();
@@ -40,20 +57,14 @@ public class AgePattern extends gObject{
         
     }
     
+    public String getName(){
+        return name;
+    }
+    
     public void draw(RenderTarget target){}
     
     
     // User/Player Pattern
-    public AgePattern(){}
     
-    public boolean loadFromFile(String path){}
-    
-    public boolean create(String name){
-        //'name' has to be unique >> check names in the folder "Decks/..."
-    }
-    
-    public boolean delete(String name){
-        //
-    }
         
 }

@@ -15,9 +15,9 @@ public class Game {
          if (!Fonts.load()) return false;
          if (!Musics.load()) return false;
         
-         if (!Cards.load()) return false; //native cards and native wonders
-         if (!Deck.load()) return false;//user cards and user wonders >> génère dynamiquement les cartes utilisateurs
-         if (!AgePattern.load()) return false; //génère dynamiquement les patternes utilisateurs
+         if (!Cards.load()) return false; //native cards and native wonders >> génère dynamiquement les textures utilisateurs
+         if (!Deck.load()) return false;//native deck >> génère dynamiquement les cartes utilisateurs
+         if (!AgePattern.load()) return false; //native agepattern >> génère dynamiquement les patternes utilisateurs
         
          if (!Gamerules.load()) return false; //native rules
         
@@ -60,14 +60,16 @@ public class Game {
             while (window.isOpen())
             {
                 Game.events();
+                
+                switch (){
+                    case MAIN_MENU:/*select menu*/break;
+                    case STEP_GAMERULES:/*select game rules > native : user*/break;
+                    case STEP_AGEPATTERNS:/*select agepatterns > native : user*/break;
+                    case STEP_DECKS:/*select decks > native : user*/break;
+                }
             }
             
-            switch (){
-                case MAIN_MENU:/*select menu*/break;
-                case STEP_GAMERULES:/*select game rules > native : user*/break;
-                case STEP_AGEPATTERNS:/*select agepatterns > native : user*/break;
-                case STEP_DECKS:/*select decks > native : user*/break;
-            }
+            
             
         }
         else{

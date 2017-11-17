@@ -1,5 +1,5 @@
 
 
 public class WonderCard extends ACard{
-    private 
+    private GameScript internalScript;
 }

@@ -1,4 +1,4 @@
-//objects:player/opponent/
+//qui utilise la fonction:player/opponent/
 //lorsque que le joueur "player" active un script l'opposant peut pouvoir agir
 
 void gainMoney(int):player
@@ -35,8 +35,9 @@ PCoin getCoinAmongPlayer(String[] restriction)
 void destroyCoin(ACard):player //va dans la pile de coin de la partie
 void buildCoin(ACard):player
 
-//Taxes
-Taxe getTaxes(int index)
+//Military Taxes
+Taxe getPlayerTaxes(int step)
+Taxe getOpponentTaxes(int step)
 
 void removeTaxes(Taxe)
 void taxPlayer(Taxe)

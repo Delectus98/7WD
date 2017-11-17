@@ -27,7 +27,7 @@ public class Textures{
     //structures
 
     
-    static public void load(){
+    static public void preload(){
       
     }
     

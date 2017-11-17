@@ -1,15 +1,24 @@
 
 public final class Gamerules {
-    String name;
+    public static Gamerules nativeRules;
+    
+    public static boolean load(){
+        nativeRules = new Gamerules();
+    }
     
     
-    ArrayList<AgePattern> ages; //using Decks 
+    private String name;
+    private ArrayList<AgePattern> ages; //using Decks 
     
-    HashMap<String, WonderCard> wonders;
-    HashMap<String, PCoin> coins;
+    private HashMap<String, WonderCard> wonders;
+    private HashMap<String, PCoin> coins;
     
     public void loadFromFile(String fullpath){
         //
+    }
+    
+    public String getName(){
+        return name:
     }
     
 }

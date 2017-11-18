@@ -49,8 +49,8 @@ public class Game {
     }
     
     static private void events(){
-        for (Event event : window.pollEvents){
-            if (event.type == Event.Type.Closed)
+        for (Event event : window.pollEvents()){
+            if (event.type == Event.Type.CLOSED)
                 window.close();
         }
     }
@@ -60,21 +60,19 @@ public class Game {
             while (window.isOpen())
             {
                 Game.events();
-                
-                switch (){
-                    case MAIN_MENU:/*select menu*/break;
-                    case STEP_GAMERULES:/*select game rules > native : user*/break;
-                    case STEP_AGEPATTERNS:/*select agepatterns > native : user*/break;
-                    case STEP_DECKS:/*select decks > native : user*/break;
-                }
             }
             
-            
+            switch (){
+                case MAIN_MENU:/*select menu*/break;
+                case STEP_GAMERULES:/*select game rules > native : user*/break;
+                case STEP_AGEPATTERNS:/*select agepatterns > native : user*/break;
+                case STEP_DECKS:/*select decks > native : user*/break;
+            }
             
         }
         else{
-            JOptionPane.showMessageDialog(null, "Native Assets exception throw : Can't load all resources. \n" +
-                                          "Please make sure that you do not remove any of native resources.");
+            JOptionPane pane = new JOptionPane("Les ressources de base du jeu sont manquantes", "ok");
+            pane.open();
         }
     }
     

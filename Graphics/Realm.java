@@ -1,5 +1,6 @@
 
 
 public class Realm extends gObject{
-    private ArrayList<Model> model;
+    private ArrayList<IsometricModel> models;
+    private Army[2] armies;
 }

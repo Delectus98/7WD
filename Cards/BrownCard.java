@@ -33,4 +33,14 @@ public class BrownCard extends ACard{
         
         this.banner.setTexture(Textures.get("Resources/Cards/brown_banner.jpg"), true);
     }
+    
+    @Override
+    public void draw(RenderTarget target){
+        target.draw(brownBanner);
+        
+        for (MaterialModel model : models){
+            models.draw(target);
+        }
+    }
+    
 }

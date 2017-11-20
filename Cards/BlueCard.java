@@ -11,13 +11,15 @@ public class BlueCard extends ACard{
         this.model = new PointsModel(this.civilPoints);
         
         this.banner.setTexture(Textures.get("Resources/Cards/blue_banner.jpg"), true);
-        
+       
         
     }
     
-    
+    @Override
     public void draw(RenderTarget target){
-        model.draw(target);
+        target.draw(banner);
+        
+        model.draw(target);   
     }
     
 }

@@ -4,6 +4,7 @@ public class Game {
     static private Gamerules rules;
     static private RenderWindow window = new RenderWindow( VideoMode.getDesktopMode(), "7 Wonders Duel");
     
+    static private Gameboard gameboard;
     
     static private Player playerA;
     static private Player playerB;

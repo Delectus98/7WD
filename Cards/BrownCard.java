@@ -7,6 +7,7 @@ public class BrownCard extends ACard{
     
     //graphics
     private ArrayList<MaterialModel> models;
+    private Sprite brownBanner = new Sprite();
     
     public BrownCard(String name, int wood, int stone, int clay){
         super(name);
@@ -29,5 +30,7 @@ public class BrownCard extends ACard{
              models.add(new WoodModel(clay));
              models.get(models.size()-1).setPosition((wood != 0) ? ((stone != 0) ? 100 : 50) : 0, 0); 
         }
+        
+        this.banner.setTexture(Textures.get("Resources/Cards/brown_banner.jpg"), true);
     }
 }

@@ -13,12 +13,13 @@ public final class Gamerules {
     private HashMap<String, WonderCard> wonders;
     private HashMap<String, PCoin> coins;
     
-    public void loadFromFile(String fullpath){
-        //
+    public boolean loadFromFile(String fullpath){
+        //fenêtre graphique de selection d'un fichier
+        return false;
     }
     
     public String getName(){
-        return name:
+        return name;
     }
     
 }

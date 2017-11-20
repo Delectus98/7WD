@@ -6,6 +6,8 @@ public class Gameboard {
     
     private Sprite militaryPawn;
     
+    private Pair<AgePattern, Deck>[] ages;
+    
     public Gameboard(Gamerules rules){}
        
 }

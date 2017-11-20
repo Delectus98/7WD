@@ -60,7 +60,8 @@ public final class Deck {
     public void shuffle(){ 
         //Mélange de Fisher-Yates
         for (int i=0 ; i < cards.size() ; ++i){
-            int rand = Math.Random() % cards.size();
+            Random random = new Random(); 
+            int rand = random.nextInt(cards.size());
 
             ACard ref = cards[i];
 

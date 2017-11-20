@@ -68,6 +68,9 @@ public class Game {
                 case STEP_GAMERULES:/*select game rules > native : user*/break;
                 case STEP_AGEPATTERNS:/*select agepatterns > native : user*/break;
                 case STEP_DECKS:/*select decks > native : user*/break;
+                case FIRST_GAME_STEP: /*players selection and init*/ break;
+                case GAME_STEP: /*players turn*/ break;
+                case END_GAME_STEP: /*victory and defeat or deconnexion -> try again : quit*/ break;
             }
             
         }

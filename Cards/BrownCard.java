@@ -6,7 +6,7 @@ public class BrownCard extends ACard{
     private int clay = 0;
     
     //graphics
-    private ArrayList<ResourcesModel> models;
+    private ArrayList<MaterialModel> models;
     
     public BrownCard(String name, int wood, int stone, int clay){
         super(name);
@@ -16,16 +16,18 @@ public class BrownCard extends ACard{
         this.clay = clay;
         
         if (wood != 0){
-            WoodModel temp = new WoodModel();
-
+             models.add(new WoodModel(wood));
+             models.get(models.size()-1).setPosition(0, 0);
         }
         
         if (stone != 0){
-            StoneModel temp = new StoneModel();
+             models.add(new StoneModel(stone));
+             models.get(models.size()-1).setPosition((wood != 0) ? 50 : 0, 0); 
         }
         
         if (clay != 0){
-            ClayModel temp = new ClayModel();
+             models.add(new WoodModel(clay));
+             models.get(models.size()-1).setPosition((wood != 0) ? ((stone != 0) ? 100 : 50) : 0, 0); 
         }
     }
 }

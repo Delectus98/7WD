@@ -1,6 +1,6 @@
 
 
-public class GameScripts {
+public class GameScript {
     private ArrayList<String> lines;
     private Trigger trigger = null;
     //private ArrayList<> compiled
@@ -14,7 +14,7 @@ public class GameScripts {
     
     
     
-    public InternalScript(String[] data, Trigger trigger){
+    public GameScript(String[] data, Trigger trigger){
         
         this.trigger = trigger;
     }

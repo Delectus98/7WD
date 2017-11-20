@@ -8,6 +8,8 @@ public class Gameboard {
     
     private Pair<AgePattern, Deck>[] ages;
     
+    
+    
     public Gameboard(Gamerules rules){}
        
 }

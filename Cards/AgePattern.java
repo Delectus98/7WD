@@ -54,14 +54,20 @@ public class AgePattern implements gObject{
         
         
     }
-    public String getName(){
+    public final String getName(){
         return name;
     }
-	@Override
-	public void draw(RenderTarget target) {
-		
-		
-	}
+    
+    public final String getNamespace(){
+        return namespace;
+    }
+	
+	
+    @Override
+    public void draw(RenderTarget target) {
+
+ 
+    }
     // User/Player Pattern
     
         

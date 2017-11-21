@@ -3,6 +3,7 @@ import java.util.*;
 
 public abstract class ACard extends gObject
 {
+    private String namespace;
     private String name;
     protected Text title;
     
@@ -16,9 +17,14 @@ public abstract class ACard extends gObject
         this.title.setOrigin(this.title.getGlobalBounds().width/2, this.title.getGlobalBounds().height/2);
     }
     
-    public String getName(){
+    public final String getName(){
         return name;
     }
+    
+    public final String getNamespace(){
+        return namespace;
+    }
+    
 }
 
 

@@ -53,8 +53,12 @@ public final class Deck {
     private String name;
     private ArrayList<ACard> cards;
 
-    public String getName(){
+    public final String getName(){
         return name;
+    }
+    
+    public final String getNamespace(){
+        return namespace;
     }
   
     public void shuffle(){ 

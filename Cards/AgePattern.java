@@ -37,6 +37,7 @@ public class AgePattern implements gObject{
     }
     
     
+    private String namespace;
     private String name;
     private ArrayList<CardLocation> locations;
     

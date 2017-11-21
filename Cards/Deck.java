@@ -49,7 +49,7 @@ public final class Deck {
     
     
     
-    
+    private String namespace;
     private String name;
     private ArrayList<ACard> cards;
 

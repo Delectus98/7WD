@@ -6,20 +6,24 @@ public final class Gamerules {
         nativeRules = new Gamerules();
     }
     
-    
+    private String namespace;
     private String name;
-    private ArrayList<AgePattern> ages; //using Decks 
+    private ArrayList<Pair<String, String>> ages; //using Decks 
     
-    private HashMap<String, WonderCard> wonders;
-    private HashMap<String, PCoin> coins;
+    private MultiHashMap<String, WonderCard> wonders;
+    private MultiHashMap<String, PCoin> coins;
     
     public boolean loadFromFile(String fullpath){
         //fenêtre graphique de selection d'un fichier
         return false;
     }
     
-    public String getName(){
+    public final String getName(){
         return name;
+    }
+    
+    public final String getNamespace(){
+        return namespace;
     }
     
 }

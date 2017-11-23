@@ -1,3 +1,4 @@
 <cards namespace="Delectus98">
-    <card type= name="" .....arguments>
-    <card type= name="" .....arguments>
+    <card type=blue name="" .....arguments isometric="Assets/User/batimentA.png">
+    <card type=green name="" .....arguments isometric="">
+    <card >

@@ -6,8 +6,11 @@ public class IsometricModel implements gGraphics{
     private Sprite sprite = new Sprite();
     
     
-    public IsometricModel(ConstTexture texture, int sizeU, int sizeW){
+    public IsometricModel(ConstTexture texture, int cw, int ch){
         sprite.setTexture(texture);
+        
+        this.cw = cw;
+        this.ch = ch;
         //sprite.setOrigin(downleftcorner);
     }
     

@@ -1,6 +1,8 @@
 
 
 public class IsometricModel implements gGraphics{
+    private int cw;
+    private int ch;
     private Sprite sprite = new Sprite();
     
     

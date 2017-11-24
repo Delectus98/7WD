@@ -1,9 +1,8 @@
 
 
 public class Realm extends gObject{
-   
-    private int 
-    private ArrayList<IsometricModel> models;
+    
+    private ArrayList<IsometricModel> models = new ArrayList<>();
     
     public void add(IsometricModel model){
         //find a place

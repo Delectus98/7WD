@@ -1,5 +1,5 @@
 
-public class AgePattern implements gObject{
+public class AgePattern extends Loadable implements gObject{
 
     private static class CardLocation {
         private final ACard card;

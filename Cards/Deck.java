@@ -1,6 +1,6 @@
 
 
-public final class Deck {
+public final class Deck implements Loadable{
     //User decks
     static private HashMap<String, ACard> userDecks;
         //si un deck existe déja alors on en rajoute pas une et on renvoie false

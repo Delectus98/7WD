@@ -1,7 +1,7 @@
 import java.util.*;
 
 
-public abstract class ACard extends gObject
+public abstract class ACard extends Loadable implements gObject
 {
     private String namespace;
     private String name;

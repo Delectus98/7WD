@@ -1,26 +1,16 @@
 
 
-public class IsometricModel implements gGraphics{
-    private int cw;
-    private int ch;
-    private Sprite sprite = new Sprite();
+public class IsometricModel extends Sprite implements gGraphics{
+    private int length;
     
-    
-    public IsometricModel(ConstTexture texture, int cw, int ch){
+    public IsometricModel(ConstTexture texture, int length){
         sprite.setTexture(texture);
         
-        this.cw = cw;
-        this.ch = ch;
+        this.length = length;
         //sprite.setOrigin(downleftcorner);
     }
     
-    public boolean intersect(IsometricModel model){
-        //model
-        return false;
+    public int getSquareLength() {
+        return length;
     }
-    
-    public void draw(RenderTarget target){
-      target.draw(sprite);
-    }
-    
 }

@@ -14,5 +14,7 @@ public abstract class CodeFragment {
     public final void setCodeFragment(CodeFragment next){
         this.next = next;
     }
+    
+    public abstract void modify();
    
 }

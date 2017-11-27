@@ -35,6 +35,9 @@ public class BrownCard extends ACard{
     }
     
     @Override
+    public boolean loadFromFile(String namespace, String name){}
+    
+    @Override
     public void draw(RenderTarget target){
         target.draw(brownBanner);
         

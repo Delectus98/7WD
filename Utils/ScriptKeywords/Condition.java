@@ -1,6 +1,6 @@
 
 
-public abstract class Condition implements CodeFragment{
+public abstract class Condition extends CodeFragment{
     protected boolean result;
 
     public abstract boolean test();

@@ -9,6 +9,7 @@ public class ReferenceEquals extends Condition {
     @Override
     public boolean test(){
         super.result = typeA == typeB;
+        return super.result;
     }
     
 }

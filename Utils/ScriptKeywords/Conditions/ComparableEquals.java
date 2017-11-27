@@ -9,6 +9,7 @@ public class ComparableEquals extends Condition {
     @Override
     public boolean test(){
         super.result = typeA.equals(typeB);
+        return super.result;
     }
     
 }

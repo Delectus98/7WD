@@ -7,6 +7,7 @@ public final class Deck extends Loadable implements Loadable{
         //les deck utilisateurs sont limités (pas plus de XXX >> à définir) et ils sont générés que si ils sont demandés
     public Deck(){}
     
+    @Override
     public boolean loadFromFile(String fullpath){
         //load user deck
         // deck name est unique

@@ -34,8 +34,7 @@ public class BrownCard extends ACard{
         this.banner.setTexture(Textures.get("Resources/Cards/brown_banner.jpg"), true);
     }
     
-    @Override
-    public boolean loadFromFile(String namespace, String name){}
+    
     
     @Override
     public void draw(RenderTarget target){

@@ -15,8 +15,6 @@ public class BlueCard extends ACard{
         
     }
     
-    @Override
-    public boolean loadFromFile(String namespace, String name){}
     
     @Override
     public void draw(RenderTarget target){

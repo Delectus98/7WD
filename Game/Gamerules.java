@@ -12,10 +12,12 @@ public final class Gamerules extends Loadable{
     private MultiHashMap<String, String> wonders;
     private MultiHashMap<String, String> coins;
     
-    public boolean loadFromFile(String fullpath){
+    @Override
+    public boolean loadFromFile(String namespace, String name){
         //fenêtre graphique de selection d'un fichier
         return false;
     }
+    
    
     
 }

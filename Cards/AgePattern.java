@@ -22,8 +22,10 @@ public class AgePattern extends Loadable implements gObject{
     }
     //user patterns
     public AgePattern(){}
-    
-    public boolean loadFromFile(String path){return true;}
+	
+    @Override
+    public boolean loadFromFile(String namespace, String name){}
+
     //native patterns
     static public AgePattern FirstAgePattern;
     static public AgePattern SecondAgePattern;

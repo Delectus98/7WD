@@ -8,7 +8,7 @@ public final class Deck extends Loadable implements Loadable{
     public Deck(){}
     
     @Override
-    public boolean loadFromFile(String fullpath){
+    public boolean loadFromFile(String namesapce, String name){
         //load user deck
         // deck name est unique
         //  > load existing cards (can't be removed) : "native:name"

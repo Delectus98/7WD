@@ -7,6 +7,8 @@ public class Boolean extends Condition {
     }
     
     @Override
-    public void test(){}
+    public boolean test(){
+        return super.result;
+    }
 
 }

@@ -19,8 +19,8 @@
 //Pattern currentPattern;
 //HashMap<String, Array> arrays;
 
-<initialise type="Int" name="PlayerCardsCount" constructor=function("Player.getCardCount")>
-<function name="Player.earnMoney" value={"PlayerCardsCount"}>
+<initialise type="Int" name="PlayerCardsCount" constructor={function("Player.getCardCount"})>
+<function name="Player.earnMoney" args={"PlayerCardsCount"}>
 
 <foreach "playerCards">
   <>

@@ -6,7 +6,9 @@ public abstract class Modificators {
     Player currentPlayer;
     Player opponentPlayer;
     
-    @Override
+    
+    
+    
     public static String execute(String function, String args[]){
         //Player|Opponent functions
         if (function.equals("Player.earnMoney")){ if (args.length == 1){

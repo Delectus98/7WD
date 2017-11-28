@@ -1,0 +1,5 @@
+//HashMap<String, Object> memory
+//HashMap<String, Array> arrays;
+<foreach "Cards">
+  <>
+</foreach>

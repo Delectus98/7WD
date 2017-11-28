@@ -1,5 +1,6 @@
 //HashMap<String, Object> memory
 //HashMap<String, Array> arrays;
+<initialise type="" constructor=>
 <foreach "Cards">
   <>
 </foreach>

@@ -8,7 +8,7 @@ public class While extends Loop {
     }
 
     @Override
-    public void execute(){
+    public String execute(){
         while (condition.test()){
             for (CodeFragment fragment : inside){
                 fragment.execute();

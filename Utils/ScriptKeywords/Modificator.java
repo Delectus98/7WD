@@ -1,6 +1,7 @@
 
 
 public abstract class Modificators {
+    HashMap<String, Object> memory = new HashMap<String, Object>();
     //params
     Player currentPlayer;
     Player opponentPlayer;

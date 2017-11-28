@@ -1,9 +1,14 @@
 //HashMap<String, Object> memory
+//HashMap<String, Deck> decks;
+//HashMap<String, ACards> graveyard;
+//HashMap<String, ACards> player;
+//HashMap<String, ACards> opponent;
+//Pattern currentPattern;
 //HashMap<String, Array> arrays;
 
 <initialise type="Int" name="PlayerCardsCount" constructor=function("Player.getCardCount")>
 <function name="Player.earnMoney" value={"PlayerCardsCount"}>
 
-<foreach "Cards">
+<foreach array"Cards">
   <>
 </foreach>

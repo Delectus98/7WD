@@ -15,6 +15,9 @@ public abstract class Loop extends CodeFragment {
     
     
     @Override
+    public abstract String execute(){}
+    
+    @Override
     public abstract void modify(){}
 
     

@@ -1,14 +1,27 @@
+#Objets accessibles
 //HashMap<String, Object> memory
 //HashMap<String, Deck> decks;
 //HashMap<String, ACards> graveyard;
-//HashMap<String, ACards> player;
-//HashMap<String, ACards> opponent;
+//HashMap<String, ACards> playerCards;
+    //ArrayList<BlueCard> playerBlueCards;
+    //ArrayList<BrownCard> playerBrownCards;
+    //ArrayList<GreenCard> playerGreenCards;
+    //ArrayList<RedCard> playerRedCards;
+    //ArrayList<GreyCard> playerGreyCards;
+    //ArratList<YellowCard> playerYellowCards;
+//HashMap<String, ACards> opponentCards;
+    //ArrayList<BlueCard> playerBlueCards;
+    //ArrayList<BrownCard> playerBrownCards;
+    //ArrayList<GreenCard> playerGreenCards;
+    //ArrayList<RedCard> playerRedCards;
+    //ArrayList<GreyCard> playerGreyCards;
+    //ArratList<YellowCard> playerYellowCards;
 //Pattern currentPattern;
 //HashMap<String, Array> arrays;
 
 <initialise type="Int" name="PlayerCardsCount" constructor=function("Player.getCardCount")>
 <function name="Player.earnMoney" value={"PlayerCardsCount"}>
 
-<foreach array"Cards">
+<foreach "playerCards">
   <>
 </foreach>

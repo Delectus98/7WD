@@ -19,6 +19,8 @@
 //Pattern currentPattern;
 //HashMap<String, Array> arrays;
 
+/*String[] findValues(String what, String[] args);
+*/
 <initialise type="Int" name="PlayerCardsCount" constructor={function("Player.getCardCount"})>
 <function name="Player.earnMoney" args={"PlayerCardsCount"}>
 

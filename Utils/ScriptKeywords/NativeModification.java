@@ -1,6 +1,6 @@
 
 
-public abstract class Modificators {
+public abstract class NativeModification {
     HashMap<String, Object> memory = new HashMap<String, Object>();
     //params
     Player currentPlayer;

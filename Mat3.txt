@@ -1,0 +1,8 @@
+Application linéaire: 
+  * alors pour (f:E→F) on a :
+  * (∀ (x, y) e E²), f(x+y) = f(x) + f(y)
+  * ∀λ ∈ K, ∀x ∈ E, f (λx) = λf (x)
+  * Ker(f) = {x e E | f(x) = 0} = f^-1({0}) >> noyau
+  * Im(f) = {f(x) | x e E} = f(E) >> image
+  * dim(Ker(f) + dim(Im(f)) = dim(E)
+  * 

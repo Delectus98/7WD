@@ -17,3 +17,13 @@ Combinaisons linéraire:
   * famille génératrice : (v1, v2, v3) e R3 donc on peut générer
   tous les vecteurs de R3 grace à ces 3 vecteurs (1,0,0), (0,1,0), (0,0,1)
   tel que R3 = {(a, b, c) e R3 | av1 + bv2 + cv3}
+  
+Matrices semblables:
+  * A = PDP-1
+    si P est orthogonal alors A = PDP-1 = PDtP
+  
+Vecteurs propres
+  * Application linéraire A tel que AX = λX (ou λX est le vecteur propre)
+Valeurs propres
+  * Application linéraire A tel que AX = λX (ou λ est la valeur propre)
+   f(x) = λX <=> (A - λI)X = 0

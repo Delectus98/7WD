@@ -1,3 +1,5 @@
+Rang d'une matrice:
+  * Nombre de pivots
 Application linéaire A: 
   * alors pour (f:E→F) on a :
   * (∀ (x, y) e E²), f(x+y) = f(x) + f(y)

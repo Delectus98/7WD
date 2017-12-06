@@ -1,0 +1,7 @@
+=> pendant la selection des paramètres (partie spéciale)
+  => age pattern => load from file .age / multi deck (exemple third age with regular cards and guild cards)
+  => age deck => load specific cards in specific users file .deck
+  => wonders => load from file .wonders => load internal scripts
+  => players money => enter digit inputs
+  => progress coin => load from file .coins
+  => military board => player 1 distance <-> center <-> player 2 distance

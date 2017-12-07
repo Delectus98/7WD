@@ -58,6 +58,7 @@ public class Game {
     
     static public void main(String[] args){
         if (Game.load()){
+            
             while (window.isOpen())
             {
                 Game.events();

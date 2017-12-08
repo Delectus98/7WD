@@ -1,8 +1,13 @@
+public class CardCollection <T extends ACard> {
+    private ArrayList<ACard> cards;
+}
+
 
 public abstract class Protagonist {
+    protected CardCollection collection;
     protected ArrayList<BrownCard> ;
-    protected ArrayList<BrownCard> ;
-    protected ArrayList<BrownCard> ;
+    protected ArrayList<GreyCard> ;
+    protected ArrayList<YellowCard> ;
     protected ArrayList<BrownCard> ;
     protected ArrayList<BrownCard> ;
     protected ArrayList<BrownCard> ;
@@ -15,4 +20,15 @@ public abstract class Protagonist {
     public final updateGraphics(){
     }
     
+}
+
+public class LocalPlayer extends Protagonist {
+}
+
+public class NetworkPlayer extends Protagonist {
+    //si les deux protagonistes sont mis en tant que NetworkPlayer alors on verra une partie qui se déroule ailleurs
+}
+
+public class IAPlayer extends Protagonist {
+    //si les deux prootagonistes sont des IA alors le jeu se déroule tout seul
 }

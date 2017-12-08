@@ -9,6 +9,14 @@ public Scene extends Screen {
     public void update(){}
 }
 
+CanvasAction event = (Canvas canvas) -> {
+    if (KeyInput.isPressed()){
+        canvas.setColor();
+    } else {
+        canvas.setColor();
+    }
+};
+
 
 String[] vertex = 
 {

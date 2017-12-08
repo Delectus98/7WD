@@ -32,3 +32,24 @@ String[] vertex =
 
 this.shader.setParameter("usingCanvasPosition", canvases.get(i).localPos);
 target.draw(canvases.get(i).content, this.shader);
+
+
+public class Screen implements Drawable
+    private ArrayList<Canvas>
+
+    public void print(org.jsfml.graphics.Drawable drawable){
+        screenTexture.draw(drawable);
+    }
+    
+    private Vector2<Float> projectTop(Vector<Float> pos, int index){
+        for (int i=index ; i >= 0 ; --i){
+        }
+    }
+    
+    public void build(){
+        pos1;
+        pos2;
+        pos3;
+        pos4;
+    }
+}
